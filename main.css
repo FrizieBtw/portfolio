@@ -1,0 +1,562 @@
+html {
+	height: 100%;
+}
+
+p, h1 {
+	font-family: Secular One;
+	color: #ffffff;
+}
+
+#contact button {
+	border: none;
+	outline: none;
+	background-color: #6c5ce7;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 5px;
+	transition: all ease 0.1s;
+	box-shadow: 0px 5px 0px 0px #a29bfe;
+	height: 100%;
+	width: 100%;
+}
+
+#contact button:active {
+	transform: translateY(5px);
+	box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+button {
+	cursor: pointer;
+}
+
+div#contact {
+	height: 45px;
+	width: 120px;
+	position: fixed;
+	padding: 10px;
+	z-index: 10000;
+}
+
+nav {
+	display: flex;
+	width: 33%;
+	align-self: flex-end;
+	padding-bottom: 2.5vw;
+	padding-left: 2.5vw;
+	justify-content: space-around;
+}
+
+main {
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: center url(images/Fond_portfolio.jpg);
+	height: 100%;
+	margin: 0;
+}
+
+.pdf {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(104%) contrast(102%);
+	width: 35px;
+	position: fixed;
+	right: 10px;
+	bottom: 13px;
+}
+
+.pdf:hover {
+	filter: invert(42%) sepia(44%) saturate(5912%) hue-rotate(231deg) brightness(94%) contrast(92%);
+	cursor: pointer;
+}
+
+#present {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding-right: 6vw;
+	padding-top: 3vw;
+	height: 50%;
+	width: 100%;
+	align-items: flex-end;
+}
+
+#present h1 + p {
+	font-size: 50px;
+	margin: 0;
+}
+
+#present h1 {
+	font-size: 100px;
+	margin: 0;
+	margin-right: 190px;
+}
+
+#contact-card button {
+	background: transparent;
+	border: none;
+}
+
+#contact-card #xmark {
+	width: 25px;
+	height: 25px;
+	transform: translateX(-7px);
+}
+
+#contact-card button img, #contact-card a img {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(104%) contrast(102%);
+}
+
+#contact-card button img:hover, #contact-card a img:hover {
+	filter: invert(42%) sepia(44%) saturate(5912%) hue-rotate(231deg) brightness(94%) contrast(92%);
+}
+
+#contact-card {
+	position: fixed;
+	animation-duration: 1.5s;
+	animation-name: slidein;
+	display: none;
+	padding: 10px;
+	z-index: 1000000;
+}
+
+.card {
+	width: 221px;
+    height: 285px;
+    background: rgb(38, 38, 38);
+    box-shadow: 7px 5px 10px rgb(0 0 0 / 33%);
+    border-radius: 5px;
+}
+
+.imge {
+	height: 106px;
+    background-color: #6c5ce7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.imge .Usericon {
+	transform: translateX(10px) translateY(10px);
+    width: 86px;
+}
+
+.Usericon img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.imge .UserName {
+	background-color: #414141;
+    width: 110px;
+    height: 20px;
+    border-width: 10px;
+    border-radius: 5px;
+    border-color: #262626;
+    color: #ffffff;
+    font-size: 15px;
+    transform: translateX(102px) translateY(-28px);
+    margin: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.imge .Id {
+	background-color: #414141;
+	width: 100px;
+	height: 15px;
+	border-width: 10px;
+	border-radius: 5px;
+	border-color: #262626;
+	color: #262626;
+	font-size: 15px;
+	font-weight: bold;
+	transform: translateX(70px) translateY(-25px);
+	margin: 0;
+}
+
+.Description {
+	border-color: #141414;
+    background-color: #414141;
+    transform: translate(5px, 6px);
+	width: 210px;
+    height: 132px;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.Description p {
+	margin: 0;
+	font-size: 17.5px;
+}
+
+.social-media:before {
+	content: " ";
+	display: block;
+	width: 100%;
+	height: 2px;
+	transform: translatey(10px);
+	background: #414141;
+}
+
+.social-media a {
+	margin-right: 15px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.social-media a:last-child {
+	margin-right: 0;
+}
+
+.social-media a img {
+	transform: translateX(61px) translateY(15px);
+	width: 20px;
+	fill: currentColor;
+}
+
+@keyframes slidein {
+	from {
+		top: -280px;
+	}
+
+	to {
+		top: 0px;
+	}
+}
+
+.container {
+	position: relative;
+	width: 190px;
+	height: 254px;
+	transition: 200ms;
+}
+
+.container:active {
+	width: 180px;
+	height: 245px;
+}
+
+#card {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	transition: 700ms;
+	background: #262626;
+}
+
+.title {
+	opacity: 0;
+	transition-duration: 100ms;
+	transition-delay: 10ms;
+	position: absolute;
+	font-size: x-large;
+	font-weight: bold;
+	text-align: center;
+}
+
+.title p {
+	font-size: 20px;
+	margin: 5px;
+}
+
+.tracker:hover~#card .title {
+	opacity: 1;
+}
+
+#prompt {
+	bottom: 8px;
+	left: 12px;
+	z-index: 20;
+	font-size: 20px;
+	font-weight: bold;
+	transition: 300ms ease-in-out-out;
+	position: absolute;
+	max-width: 110px;
+	color: rgb(255, 255, 255);
+}
+
+.tracker {
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+}
+
+.tracker:hover {
+	cursor: pointer;
+}
+
+.tracker:hover~#card #prompt {
+	opacity: 0;
+}
+
+.canvas {
+	perspective: 800px;
+	inset: 0;
+	z-index: 200;
+	position: absolute;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "tr-1 tr-2 tr-3 tr-4 tr-5"
+		"tr-6 tr-7 tr-8 tr-9 tr-10"
+		"tr-11 tr-12 tr-13 tr-14 tr-15"
+		"tr-16 tr-17 tr-18 tr-19 tr-20"
+		"tr-21 tr-22 tr-23 tr-24 tr-25";
+}
+
+#card::before {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	transition: 200ms;
+}
+
+.tr-1 {
+	grid-area: tr-1;
+}
+
+.tr-2 {
+	grid-area: tr-2;
+}
+
+.tr-3 {
+	grid-area: tr-3;
+}
+
+.tr-4 {
+	grid-area: tr-4;
+}
+
+.tr-5 {
+	grid-area: tr-5;
+}
+
+.tr-6 {
+	grid-area: tr-6;
+}
+
+.tr-7 {
+	grid-area: tr-7;
+}
+
+.tr-8 {
+	grid-area: tr-8;
+}
+
+.tr-9 {
+	grid-area: tr-9;
+}
+
+.tr-10 {
+	grid-area: tr-10;
+}
+
+.tr-11 {
+	grid-area: tr-11;
+}
+
+.tr-12 {
+	grid-area: tr-12;
+}
+
+.tr-13 {
+	grid-area: tr-13;
+}
+
+.tr-14 {
+	grid-area: tr-14;
+}
+
+.tr-15 {
+	grid-area: tr-15;
+}
+
+.tr-16 {
+	grid-area: tr-16;
+}
+
+.tr-17 {
+	grid-area: tr-17;
+}
+
+.tr-18 {
+	grid-area: tr-18;
+}
+
+.tr-19 {
+	grid-area: tr-19;
+}
+
+.tr-20 {
+	grid-area: tr-20;
+}
+
+.tr-21 {
+	grid-area: tr-21;
+}
+
+.tr-22 {
+	grid-area: tr-22;
+}
+
+.tr-23 {
+	grid-area: tr-23;
+}
+
+.tr-24 {
+	grid-area: tr-24;
+}
+
+.tr-25 {
+	grid-area: tr-25;
+}
+
+.tr-1:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-2:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(20deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-3:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-4:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(20deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-5:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(20deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-6:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-7:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(10deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-8:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-9:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(10deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-10:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-11:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-12:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(0deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-13:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-14:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(0deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-15:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-16:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-17:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-10deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-18:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-10deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-19:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-10deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-20:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.tr-21:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-20deg) rotateY(-10deg) rotateZ(0deg);
+}
+
+.tr-22:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-20deg) rotateY(-5deg) rotateZ(0deg);
+}
+
+.tr-23:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.tr-24:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-20deg) rotateY(5deg) rotateZ(0deg);
+}
+
+.tr-25:hover~#card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
