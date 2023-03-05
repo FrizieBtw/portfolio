@@ -7,7 +7,7 @@ p, h1 {
 	color: #ffffff;
 }
 
-#contact button {
+#contact button, #home button {
 	border: none;
 	outline: none;
 	background-color: #6c5ce7;
@@ -23,7 +23,7 @@ p, h1 {
 	width: 100%;
 }
 
-#contact button:active {
+#contact button:active, #home button:active {
 	transform: translateY(5px);
 	box-shadow: 0px 0px 0px 0px #a29bfe;
 }
@@ -38,6 +38,19 @@ div#contact {
 	position: fixed;
 	padding: 10px;
 	z-index: 10000;
+	transform: translateX(55px);
+}
+
+#home {
+	height: 45px;
+	width: 45px;
+	position: fixed;
+	padding: 10px;
+	z-index: 10000;
+}
+
+#home button{
+	padding: 11px;
 }
 
 nav {
@@ -109,7 +122,7 @@ body {
 	transform: translateX(-7px);
 }
 
-#contact-card button img, #contact-card a img {
+#contact-card button img, #contact-card a img, #home img {
 	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(104%) contrast(102%);
 }
 
