@@ -1,13 +1,15 @@
 html {
 	height: 100%;
+	font-family: Secular One;
 }
 
-p, h1 {
-	font-family: Secular One;
+p,
+h1 {
 	color: #ffffff;
 }
 
-#contact button, #home button {
+#contact button,
+#home button {
 	border: none;
 	outline: none;
 	background-color: #6c5ce7;
@@ -21,9 +23,11 @@ p, h1 {
 	box-shadow: 0px 5px 0px 0px #a29bfe;
 	height: 100%;
 	width: 100%;
+	font-family: Secular One;
 }
 
-#contact button:active, #home button:active {
+#contact button:active,
+#home button:active {
 	transform: translateY(5px);
 	box-shadow: 0px 0px 0px 0px #a29bfe;
 }
@@ -49,7 +53,7 @@ div#contact {
 	z-index: 10000;
 }
 
-#home button{
+#home button {
 	padding: 11px;
 }
 
@@ -100,7 +104,7 @@ body {
 	align-items: flex-end;
 }
 
-#present h1 + p {
+#present h1+p {
 	font-size: 50px;
 	margin: 0;
 }
@@ -122,11 +126,14 @@ body {
 	transform: translateX(-7px);
 }
 
-#contact-card button img, #contact-card a img, #home img {
+#contact-card button img,
+#contact-card a img,
+#home img {
 	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(104%) contrast(102%);
 }
 
-#contact-card button img:hover, #contact-card a img:hover {
+#contact-card button img:hover,
+#contact-card a img:hover {
 	filter: invert(32%) sepia(93%) saturate(1565%) hue-rotate(231deg) brightness(93%) contrast(94%);
 }
 
@@ -141,22 +148,22 @@ body {
 
 .card {
 	width: 221px;
-    height: 285px;
-    background: rgb(38, 38, 38);
-    box-shadow: 7px 5px 10px rgb(0 0 0 / 33%);
-    border-radius: 5px;
+	height: 285px;
+	background: rgb(38, 38, 38);
+	box-shadow: 7px 5px 10px rgb(0 0 0 / 33%);
+	border-radius: 5px;
 }
 
 .imge {
 	height: 106px;
-    background-color: #6c5ce7;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+	background-color: #6c5ce7;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .imge .Usericon {
 	transform: translateX(10px) translateY(10px);
-    width: 86px;
+	width: 86px;
 }
 
 .Usericon img {
@@ -166,17 +173,17 @@ body {
 
 .imge .UserName {
 	background-color: #414141;
-    width: 110px;
-    height: 20px;
-    border-width: 10px;
-    border-radius: 5px;
-    border-color: #262626;
-    color: #ffffff;
-    font-size: 15px;
-    transform: translateX(102px) translateY(-46px);
-    margin: 0;
-    margin-right: 0;
-    text-align: center;
+	width: 110px;
+	height: 20px;
+	border-width: 10px;
+	border-radius: 5px;
+	border-color: #262626;
+	color: #ffffff;
+	font-size: 15px;
+	transform: translateX(102px) translateY(-46px);
+	margin: 0;
+	margin-right: 0;
+	text-align: center;
 }
 
 .imge .Id {
@@ -195,16 +202,16 @@ body {
 
 .Description {
 	border-color: #141414;
-    background-color: #414141;
-    transform: translate(5px, 6px);
+	background-color: #414141;
+	transform: translate(5px, 6px);
 	width: 210px;
-    height: 132px;
-    border-radius: 5px;
-    margin: 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
+	height: 132px;
+	border-radius: 5px;
+	margin: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column-reverse;
 }
 
 .Description p {
@@ -572,4 +579,136 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+@media screen and (max-height: 450px) {
+	#present h1+p {
+		font-size: 45px;
+	}
+
+	#present h1 {
+		font-size: 69px;
+		margin-right: 235px;
+	}
+}
+
+@media screen and (max-width: 1000px) and (min-height: 900px) {
+	div#contact {
+		height: 90px;
+		width: 240px;
+		transform: translateX(95px);
+	}
+
+	#home {
+		height: 90px;
+		width: 90px;
+	}
+
+	#contact button {
+		font-size: 25px;
+	}
+
+	#home button {
+		padding: 20px;
+	}
+
+	main {
+		flex-direction: column-reverse;
+		justify-content: space-between;
+	}
+
+	nav {
+		align-self: center;
+	}
+
+	#present {
+		align-items: center;
+	}
+
+	#present {
+		padding-right: 0;
+		padding-top: 130px;
+	}
+
+	#present h1+p {
+		font-size: 75px;
+		text-align: center;
+	}
+
+	#present h1 {
+		font-size: 200px;
+		margin: 0;
+	}
+
+	nav {
+		padding-left: 0;
+		padding-bottom: 75px;
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100%;
+		height: 1250px;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.container {
+		width: 77vw;
+		height: 24vh;
+	}
+
+	.container #prompt {
+		font-size: 50px;
+		text-align: center;
+		bottom: 7vh;
+		left: 22.5vw;
+	}
+
+	.container:first-of-type #prompt {
+		left: 30vw;
+	}
+
+	.pdf {
+		width: 69px;
+	}
+
+	.card {
+		width: 402px;
+    height: 500px;
+	}
+
+	.imge {
+		height: 200px;
+	}
+
+	.imge .Usericon {
+		width: 180px;
+	}
+
+	.imge .UserName {
+		width: 174px;
+		height: 34px;
+		font-size: 25px;
+		transform: translateX(208px) translateY(-99px);
+	}
+
+	#contact-card #xmark {
+		width: 69px;
+		height: 69px;
+	}
+
+	.Description {
+		width: 390px;
+		height: 215px;
+	}
+
+	.Description p {
+		font-size: 30px;
+	}
+
+	.social-media a img {
+		transform: translateX(44px) translateY(22px);
+		width: 45px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
 }
