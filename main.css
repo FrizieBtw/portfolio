@@ -246,7 +246,17 @@ body {
 
 @keyframes slidein {
 	from {
-		top: -280px;
+		top: -300px;
+	}
+
+	to {
+		top: 0px;
+	}
+}
+
+@keyframes slideinphone {
+	from {
+		top: -525px;
 	}
 
 	to {
@@ -711,5 +721,9 @@ body {
 		width: 45px;
 		margin-left: 25px;
 		margin-right: 25px;
+	}
+
+	#contact-card {
+		animation-name: slideinphone;
 	}
 }
