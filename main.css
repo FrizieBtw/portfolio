@@ -628,6 +628,7 @@ body {
 	#present {
 		padding-right: 0;
 		padding-top: 130px;
+		margin-bottom: 25px;
 	}
 
 	#present h1+p {
@@ -642,7 +643,7 @@ body {
 
 	nav {
 		padding-left: 0;
-		padding-bottom: 75px;
+		padding-bottom: 50px;
 		display: flex;
 		flex-direction: column-reverse;
 		width: 100%;
@@ -653,7 +654,7 @@ body {
 
 	.container {
 		width: 77vw;
-		height: 24vh;
+		height: 23.5vh;
 	}
 
 	.container #prompt {
@@ -673,7 +674,7 @@ body {
 
 	.card {
 		width: 402px;
-    height: 500px;
+    	height: 500px;
 	}
 
 	.imge {
