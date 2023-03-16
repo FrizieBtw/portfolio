@@ -110,9 +110,13 @@ body {
 }
 
 #present h1 {
-	font-size: 90px;
 	margin: 0;
 	margin-right: 120px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 90px;
 }
 
 #contact-card button {
@@ -591,6 +595,12 @@ body {
 	user-select: none;
 }
 
+#titre {
+	width: 100%;
+	text-align: center;
+	padding-top: 50px;
+}
+
 @media screen and (max-height: 450px) {
 	#present h1+p {
 		font-size: 45px;
@@ -685,7 +695,7 @@ body {
 
 	.card {
 		width: 402px;
-    	height: 500px;
+		height: 500px;
 	}
 
 	.imge {

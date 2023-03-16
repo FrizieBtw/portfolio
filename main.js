@@ -12,11 +12,9 @@ buttonCloseContact.addEventListener('click', event => {
 
 var date = new Date();
 var heure = date.getHours();
-if(heure < 18)
-{
+if (heure < 18) {
     document.getElementById("salut").innerHTML = 'Bonjour!';
 }
-else if(heure >= 18)
-{
+else if (heure >= 18) {
     document.getElementById("salut").innerHTML = 'Bonsoir!';
 }
