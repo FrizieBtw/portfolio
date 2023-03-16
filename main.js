@@ -1,3 +1,10 @@
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+    loader.classList.add('fondu-out');
+    loader.style.display = 'none'
+})
+
 const buttonContact = document.querySelector('#contact');
 const card = document.querySelector('#contact-card');
 const buttonCloseContact = document.querySelector('#contact-card button');
