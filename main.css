@@ -919,4 +919,8 @@ h1 {
 	#contact-card {
 		animation-name: slideinphone;
 	}
+
+	#titre {
+		padding-top: 100px;
+	}
 }
