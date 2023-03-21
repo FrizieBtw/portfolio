@@ -808,10 +808,12 @@ h1 {
 
 	#contact button {
 		font-size: 25px;
+		border-radius: 10px;
 	}
 
 	#home button {
 		padding: 20px;
+		border-radius: 10px;
 	}
 
 	main {
