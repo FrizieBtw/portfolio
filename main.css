@@ -921,6 +921,10 @@ h1 {
 	}
 
 	#titre {
-		padding-top: 100px;
+		padding-top: 130px;
+	}
+
+	.carousel button img {
+		height: 60px;
 	}
 }
