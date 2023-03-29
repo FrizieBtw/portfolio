@@ -1,3 +1,4 @@
+const body = document.querySelector('body')
 const odomo = document.querySelector('#odomo');
 const rtxOdomo = document.querySelector('#retex-odomo');
 const biosphere = document.querySelector('#biosphere');
@@ -9,26 +10,32 @@ const rtxInfopany = document.querySelector('#retex-infopany');
 const rtxAff = document.querySelectorAll('.retex-aff');
 const rtxClose = document.querySelectorAll('.retex-close');
 
+function overlay(element) {
+    element.style.display = 'flex'
+    body.style.overflow = 'hidden'
+};
+
 rtxClose.forEach((monElement) => {
     monElement.addEventListener('click', () => {
         rtxAff.forEach((Element) => {
             Element.style.display = 'none'
+            body.style.overflow = 'scroll'
         })
     });
 })
 
 odomo.addEventListener('click', () => {
-    rtxOdomo.style.display = 'flex'
+    overlay(rtxOdomo)
 });
 
 biosphere.addEventListener('click', () => {
-    rtxBiosphere.style.display = 'flex'
+    overlay(rtxBiosphere)
 });
 
 blogue.addEventListener('click', () => {
-    rtxBlogue.style.display = 'flex'
+    overlay(rtxBlogue)
 });
 
 infopany.addEventListener('click', () => {
-    rtxInfopany.style.display = 'flex'
+    overlay(rtxInfopany)
 });
