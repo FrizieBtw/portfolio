@@ -277,8 +277,7 @@ h1 {
 }
 
 .container:active {
-	width: 180px;
-	height: 245px;
+	scale: 0.9;
 }
 
 #card {
