@@ -1,8 +1,6 @@
 const wrapperOne = document.querySelector('.wrapper-1');
 const leftButton = document.querySelector('.carousel-left');
 const rightButton = document.querySelector('.carousel-right');
-const leftButtonSmall = document.querySelector('.carousel-left-small');
-const rightButtonSmall = document.querySelector('.carousel-right-small');
 const imageContainer = document.querySelector('.image-container');
 
 let track = 0;
@@ -29,14 +27,6 @@ rightButton.addEventListener('click', () => {
     moveImagesLeft();
 });
 
-rightButtonSmall.addEventListener('click', () => {
-    moveImagesLeft();
-});
-
 leftButton.addEventListener('click', () => {
-    moveImagesRight();
-});
-
-leftButtonSmall.addEventListener('click', () => {
     moveImagesRight();
 });
