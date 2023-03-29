@@ -779,24 +779,23 @@ h1 {
 	display: flex;
 	color: #fff;
 	flex-wrap: wrap;
-	
 	justify-content: center;
-	margin-top: 75px;
+	margin-top: 40px;
 }
 
 .retex {
-	margin: 50px;
+	margin: 30px;
 	width: 350px;
 	height: 200px;
 	display: flex;
 	flex-direction: column;
-	
+	transition: all 0.3s;
 }
 
 .retex .image {
-	height: 78%;
-    width: 95%;
-    background-size: cover;
+	height: 80%;
+    width: 100%;
+    background-size: auto;
     background-repeat: round;
 	border-top-right-radius: 15px;
 	border-top-left-radius: 15px;
@@ -807,9 +806,29 @@ h1 {
 	background-image: url(images/odomo-rtx.jpg);
 }
 
+#biosphere .image {
+	background-image: url(images/biosphere-rtx.jpg);
+}
+
+#blogue .image {
+	background-image: url(images/blogue-rtx.jpg);
+}
+
+#infopany .image {
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#infopany .image img {
+	width: 90%;
+	height: 60%;
+}
+
 .retex .name {
-	height: 17%;
-	width: 95%;
+	height: 20%;
+	width: 100%;
 	background-color: #262626;
 	display: flex;
 	align-items: center;
@@ -823,17 +842,8 @@ h1 {
 	cursor: pointer;
 }
 
-.retex:hover .name {
-	height: 17%;
-    width: 100%;
-	font-size: 17.5px;
-	transition: all 0.3s;
-}
-
-.retex:hover .image{
-	height: 83%;
-    width: 100%;
-	font-size: 18px;
+.retex:hover  {
+	scale: 1.075;
 	transition: all 0.3s;
 }
 
