@@ -19,7 +19,7 @@ rtxClose.forEach((monElement) => {
     monElement.addEventListener('click', () => {
         rtxAff.forEach((Element) => {
             Element.style.display = 'none'
-            body.style.overflow = 'scroll'
+            body.style.overflow = 'visible'
         })
     });
 })
