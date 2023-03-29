@@ -1002,4 +1002,9 @@ h1 {
 	.carousel button img {
 		height: 60px;
 	}
+
+	.retex {
+		width: 700px;
+		height: 400px;
+	}
 }
