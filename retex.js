@@ -1,0 +1,1 @@
+const rtxOdomo = document.getElementById(odomo);

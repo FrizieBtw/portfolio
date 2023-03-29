@@ -774,6 +774,69 @@ h1 {
 	display: none;
 }
 
+#retexlist {
+	width: 100%;
+	display: flex;
+	color: #fff;
+	flex-wrap: wrap;
+	
+	justify-content: center;
+	margin-top: 75px;
+}
+
+.retex {
+	margin: 50px;
+	width: 350px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.retex .image {
+	height: 78%;
+    width: 95%;
+    background-size: cover;
+    background-repeat: round;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	transition: all 0.3s;
+}
+
+#odomo .image {
+	background-image: url(images/odomo-rtx.jpg);
+}
+
+.retex .name {
+	height: 17%;
+	width: 95%;
+	background-color: #262626;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	transition: all 0.3s;
+}
+
+.retex:hover {
+	cursor: pointer;
+}
+
+.retex:hover .name {
+	height: 17%;
+    width: 100%;
+	font-size: 17.5px;
+	transition: all 0.3s;
+}
+
+.retex:hover .image{
+	height: 83%;
+    width: 100%;
+	font-size: 18px;
+	transition: all 0.3s;
+}
+
 @keyframes fondu-in {
 	from {
 		opacity: 0%;
