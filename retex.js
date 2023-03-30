@@ -24,13 +24,6 @@ rtxClose.forEach((monElement) => {
     });
 })
 
-rtxAff.forEach((monElement) => {
-    monElement.addEventListener('click', () => {
-        monElement.style.display = 'none'
-        body.style.overflow = 'visible'
-    });
-})
-
 odomo.addEventListener('click', () => {
     overlay(rtxOdomo)
 });
