@@ -129,7 +129,8 @@ h1 {
 #home img,
 .carousel-button,
 .retex-close img,
-.pdf {
+.pdf,
+.retex .name img {
 	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(104%) contrast(102%);
 }
 
