@@ -792,9 +792,9 @@ h1 {
 
 .retex .image {
 	height: 80%;
-    width: 100%;
-    background-size: auto;
-    background-repeat: round;
+	width: 100%;
+	background-size: auto;
+	background-repeat: round;
 	border-top-right-radius: 15px;
 	border-top-left-radius: 15px;
 	transition: all 0.3s;
@@ -840,7 +840,7 @@ h1 {
 	cursor: pointer;
 }
 
-.retex:hover  {
+.retex:hover {
 	scale: 1.075;
 	transition: all 0.3s;
 }
@@ -870,11 +870,11 @@ h1 {
 
 .retex-close {
 	width: 1.5%;
-    height: 1.5%;
-    position: absolute;
-    align-self: flex-end;
-    margin-right: 15px;
-    margin-top: 5px;
+	height: 1.5%;
+	position: absolute;
+	align-self: flex-end;
+	margin-right: 15px;
+	margin-top: 5px;
 	top: 15%;
 	right: 12.5%;
 }
@@ -894,12 +894,13 @@ h1 {
 
 .pres {
 	width: 30%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	text-align: justify;
 }
 
 .pres img {
@@ -912,6 +913,7 @@ h1 {
 	from {
 		opacity: 0%;
 	}
+
 	to {
 		opacity: 100%;
 	}
@@ -1067,5 +1069,34 @@ h1 {
 	.retex {
 		width: 700px;
 		height: 400px;
+	}
+
+	.retex-fen {
+		flex-direction: column;
+		align-items: center;
+		font-size: 1.5vh;
+		height: 65%;
+	}
+
+	.pres {
+		width: 90%;
+		text-align: none;
+	}
+
+	.schema {
+		width: 69vw;
+		height: 20vh;
+		margin-bottom: 0;
+		margin-top: 35px;
+
+	}
+
+	.retex-close {
+		width: 40px;
+		top: 17.5%;
+	}
+
+	.pres img {
+		width: 90px;
 	}
 }
