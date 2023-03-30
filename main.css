@@ -831,10 +831,14 @@ h1 {
 	background-color: #262626;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
 	transition: all 0.3s;
+}
+
+.retex .name img {
+	height: 50%;
 }
 
 .retex:hover {
