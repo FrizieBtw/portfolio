@@ -934,7 +934,7 @@ h1 {
 	}
 }
 
-@media screen and (max-width: 1000px) and (min-height: 900px) {
+@media screen and (max-width: 1000px) and (min-height: 1470px) {
 	div#contact {
 		height: 90px;
 		width: 240px;
