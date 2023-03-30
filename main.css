@@ -904,9 +904,8 @@ h1 {
 }
 
 .pres img {
-	width: 50px;
+	width: 5vh;
 	align-self: flex-end;
-	margin-top: 25px;
 }
 
 @keyframes fondu-in {
