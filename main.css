@@ -1065,6 +1065,7 @@ h1 {
 	.retex {
 		width: 700px;
 		height: 400px;
+		font-size: 3vw;
 	}
 
 	.retex-fen {
