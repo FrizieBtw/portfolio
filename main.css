@@ -956,10 +956,6 @@ h1 {
 		justify-content: space-between;
 	}
 
-	nav {
-		align-self: center;
-	}
-
 	#present {
 		align-items: center;
 	}
@@ -981,10 +977,11 @@ h1 {
 	}
 
 	nav {
+		align-self: center;
 		padding-left: 0;
 		padding-bottom: 35px;
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		width: 100%;
 		height: 1250px;
 		align-items: center;
@@ -1001,7 +998,7 @@ h1 {
 		font-size: 50px;
 		text-align: center;
 		bottom: 7vh;
-		left: 22.5vw;
+		left: 35.7vw;
 	}
 
 	.container:first-of-type #prompt {
