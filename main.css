@@ -1089,14 +1089,11 @@ h1 {
 	.schema {
 		width: 69vw;
 		height: 20vh;
-		margin-bottom: 0;
-		margin-top: 35px;
-
+		margin: 0;
 	}
 
 	.retex-close {
-		width: 40px;
-		top: 17.5%;
+		display: none;
 	}
 
 	.pres img {
