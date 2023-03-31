@@ -871,6 +871,7 @@ h1 {
 	flex-wrap: wrap;
 	font-size: 1svw;
 	align-content: center;
+	display: none;
 }
 
 .retex-close {
