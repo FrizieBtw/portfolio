@@ -15,12 +15,3 @@ buttonContact.addEventListener('click', event => {
 buttonCloseContact.addEventListener('click', event => {
     card.style.display = 'none'
 });
-
-var date = new Date();
-var heure = date.getHours();
-if (heure < 18) {
-    document.getElementById("salut").innerHTML = 'Bonjour!';
-}
-else if (heure >= 18) {
-    document.getElementById("salut").innerHTML = 'Bonsoir!';
-}
