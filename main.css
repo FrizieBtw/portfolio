@@ -872,6 +872,7 @@ h1 {
 	font-size: 1svw;
 	align-content: center;
 	display: none;
+	animation: open-overlay 0.5s;
 }
 
 .retex-close {
@@ -921,6 +922,16 @@ h1 {
 
 	to {
 		opacity: 100%;
+	}
+}
+
+@keyframes open-overlay {
+	from {
+		scale: 0;
+	}
+
+	to {
+		scale: 1;
 	}
 }
 
