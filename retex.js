@@ -8,7 +8,6 @@ const rtxBlogue = document.querySelector('#retex-blogue');
 const infopany = document.querySelector('#infopany');
 const rtxInfopany = document.querySelector('#retex-infopany');
 const rtxAff = document.querySelector('.retex-aff');
-const rtxClose = document.querySelectorAll('.retex-close');
 const rtxFen = document.querySelectorAll('.retex-fen')
 var openFen;
 
@@ -25,12 +24,6 @@ function closeOverlay() {
     rtxAff.style.display = 'none'
     body.style.overflow = 'visible'
 };
-
-rtxClose.forEach((monElement) => {
-    monElement.addEventListener('click', () => {
-        closeOverlay();
-    });
-})
 
 rtxAff.addEventListener('click', (event) => {
     if (!openFen.contains(event.target)){
