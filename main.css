@@ -888,28 +888,36 @@ h1 {
 	text-align: justify;
 }
 
-#filtre {
+#filtre-container {
 	width: 100%;
 	height: 15px;
 	margin: 0;
 	padding: 0;
+	margin-top: 5px;
+	margin-bottom: 7.5px;
 	font-size: 100%;
 	display: flex;
 	justify-content: center;
 }
 
-#filtre p {
+#filtre-container p {
 	margin: 0;
 	margin-left: 25px;
 	margin-right: 25px;
 }
 
-#filtre p:first-of-type {
+#filtre-container p:first-of-type {
 	text-decoration: underline;
 }
 
-#filtre p:hover {
+#filtre-container p:hover {
 	cursor: pointer;
+	scale: 1.2;
+}
+
+.pres img {
+	width: 5vh;
+	align-self: flex-end;
 }
 
 @keyframes fondu-in {

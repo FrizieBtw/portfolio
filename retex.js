@@ -8,8 +8,11 @@ const rtxBlogue = document.querySelector('#retex-blogue');
 const infopany = document.querySelector('#infopany');
 const rtxInfopany = document.querySelector('#retex-infopany');
 const rtxAff = document.querySelector('.retex-aff');
-const rtxFen = document.querySelectorAll('.retex-fen')
+const rtxFen = document.querySelectorAll('.retex-fen');
+const rtx = document.querySelectorAll('.retex');
+const filtre = document.querySelectorAll('.filtre');
 var openFen;
+var leFiltre;
 
 function overlay(element) {
     rtxAff.style.display = 'flex'
@@ -24,6 +27,23 @@ function closeOverlay() {
     rtxAff.style.display = 'none'
     body.style.overflow = 'visible'
 };
+
+filtre.forEach((element) => {
+    element.addEventListener('click', () => {
+        filtre.forEach((fil) => {
+            fil.style.textDecoration = 'none'  
+        })
+        leFiltre = element.className.substring(7)
+            rtx.forEach((fen) => {
+                if (!fen.className.includes(leFiltre)) {
+                    fen.style.display = 'none'
+                } else {
+                    fen.style.display = 'flex'
+                }
+            })
+        element.style.textDecoration = 'underline'
+    })
+})
 
 rtxAff.addEventListener('click', (event) => {
     if (!openFen.contains(event.target)){
