@@ -898,12 +898,13 @@ h1 {
 	font-size: 100%;
 	display: flex;
 	justify-content: center;
+	flex-direction: row;
 }
 
 #filtre-container p {
 	margin: 0;
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 2vw;
+	margin-right: 2vw;
 }
 
 #filtre-container p:first-of-type {
@@ -1109,5 +1110,11 @@ h1 {
 
 	.pres img {
 		width: 90px;
+	}
+
+	#filtre-container {
+		margin-top: 15px;
+		margin-bottom: 20px;
+		font-size: 1.5vh;
 	}
 }
