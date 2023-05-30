@@ -631,6 +631,20 @@ h1 {
 	overflow: hidden;
 }
 
+.rtx-image-container {
+	display: flex;
+	align-items: center;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+}
+
+.rtx-carousel-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 .image-wrapper {
 	display: flex;
 	justify-content: center;
@@ -867,14 +881,14 @@ h1 {
 .schema {
 	margin-top: auto;
 	margin-bottom: auto;
-	width: 45vw;
+	width: 40vw;
 	height: 45vh;
 }
 
 .schema img {
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
+	border-radius: 15px;
 }
 
 .pres {
