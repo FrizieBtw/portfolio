@@ -102,3 +102,10 @@ rightButton.addEventListener('click', () => {
 leftButton.addEventListener('click', () => {
     moveImagesRight();
 });
+
+document.addEventListener('keydown', (event) => {
+    const nomTouche = event.key;
+    if (nomTouche === 'Escape') {
+        closeOverlay();
+    }
+});
