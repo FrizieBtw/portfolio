@@ -129,14 +129,16 @@ h1 {
 #home img,
 .carousel-button,
 .pdf,
-.retex .name img {
+.retex .name img,
+.plus a {
 	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(104%) contrast(102%);
 }
 
 #contact-card button img:hover,
 #contact-card a img:hover,
 .carousel-button:hover,
-.pdf:hover {
+.pdf:hover,
+.plus a:hover {
 	filter: invert(32%) sepia(93%) saturate(1565%) hue-rotate(231deg) brightness(93%) contrast(94%);
 	cursor: pointer;
 }
@@ -872,7 +874,7 @@ h1 {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	font-size: 1svw;
+	font-size: 1vw;
 	align-content: center;
 	display: none;
 	animation: open-overlay 0.5s;
@@ -965,12 +967,27 @@ h1 {
 		margin-right: 155px;
 	}
 }
+@media screen and (min-width: 575px) {
+	.retex-fen .plus {
+		align-self: flex-end;
+		width: 72%;
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 15px;
+	}
+}
 
 @media screen and (max-width: 1000px) and (min-height: 1470px) {
 	div#contact {
 		height: 90px;
 		width: 240px;
-		transform: translateX(95px);
+	}
+
+	.retex-fen .plus {
+		position: inherit;
+		display: flex;
+		justify-content: center;
+		width: 100%;
 	}
 
 	#home {
@@ -1035,7 +1052,7 @@ h1 {
 		font-size: 50px;
 		text-align: center;
 		bottom: 7vh;
-		left: 35.7vw;
+		left: 22.7vw;
 	}
 
 	.container:first-of-type #prompt {
