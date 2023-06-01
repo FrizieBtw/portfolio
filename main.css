@@ -937,6 +937,10 @@ h1 {
 	align-self: flex-end;
 }
 
+.plus a {
+	text-decoration: none;
+}
+
 @keyframes fondu-in {
 	from {
 		opacity: 0%;
