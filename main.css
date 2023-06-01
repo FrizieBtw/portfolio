@@ -1002,6 +1002,7 @@ h1 {
 	#contact button {
 		font-size: 25px;
 		border-radius: 10px;
+		transform: translateX(45px);
 	}
 
 	#home button {
