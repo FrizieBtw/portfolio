@@ -1011,6 +1011,7 @@ h1 {
 	div#contact {
 		height: 90px;
 		width: 240px;
+		transform: translateX(100px);
 	}
 
 	.retex-fen .plus {
@@ -1028,7 +1029,6 @@ h1 {
 	#contact button {
 		font-size: 25px;
 		border-radius: 10px;
-		transform: translateX(45px);
 	}
 
 	#home button {
