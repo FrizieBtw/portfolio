@@ -95,10 +95,10 @@ body {
 }
 
 .pdf {
-	width: 35px;
+	width: 25px;
 	position: fixed;
 	right: 10px;
-	bottom: 28px;
+	bottom: 10px;
 }
 
 #present {
@@ -959,6 +959,19 @@ h1 {
 
 .plus a {
 	text-decoration: none;
+}
+
+#cv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+}
+
+#cv img {
+	width: 50%;
+	height: auto;
+	border-radius: 10px;
 }
 
 @keyframes fondu-in {
