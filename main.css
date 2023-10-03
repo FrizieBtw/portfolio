@@ -832,6 +832,11 @@ h1 {
 	background-image: url(images/blogue-rtx.jpg);
 }
 
+#computr .image {
+	background-image: url(images/computr-rtx.png);
+	background-repeat: round;
+}
+
 #infopany .image {
 	background-color: #ffffff;
 	display: flex;

@@ -7,16 +7,20 @@ const blogue = document.querySelector('#blogue');
 const rtxBlogue = document.querySelector('#retex-blogue');
 const infopany = document.querySelector('#infopany');
 const rtxInfopany = document.querySelector('#retex-infopany');
+const computr = document.querySelector('#computr');
+const rtxComputr = document.querySelector('#retex-computr');
 const rtxAff = document.querySelector('.retex-aff');
 const rtxFen = document.querySelectorAll('.retex-fen');
 const rtx = document.querySelectorAll('.retex');
 const filtre = document.querySelectorAll('.filtre');
-const wrapperOne = document.querySelector('.wrapper-1');
-const leftButton = document.querySelector('.carousel-left');
-const rightButton = document.querySelector('.carousel-right');
+const wrapperOne = document.querySelectorAll('.wrapper-1');
+const leftButton = document.querySelectorAll('.carousel-left');
+const rightButton = document.querySelectorAll('.carousel-right')
 const imageContainer = document.querySelector('.rtx-image-container');
 var openFen;
 var leFiltre;
+let track = 0;
+let counter = 1;
 
 function overlay(element) {
     rtxAff.style.display = 'flex'
@@ -30,6 +34,11 @@ function closeOverlay() {
     })
     rtxAff.style.display = 'none'
     body.style.overflow = 'visible'
+    wrapperOne.forEach(element => {
+        element.style.marginLeft = 0;
+    });
+    track = 0;
+    counter = 1;
 };
 
 filtre.forEach((element) => {
@@ -75,15 +84,18 @@ infopany.addEventListener('click', () => {
     openFen = rtxInfopany
 });
 
-let track = 0;
-
-let counter = 1;
+computr.addEventListener('click', () => {
+    overlay(rtxComputr)
+    openFen = rtxComputr
+});
 
 const moveImagesLeft = function () {
     if (counter < imageContainer.childElementCount) {
         counter++;
         track = track - 100;
-        wrapperOne.style.marginLeft = `${track}%`;
+        wrapperOne.forEach(element => {
+            element.style.marginLeft = `${track}%`;
+        });
     }
 }
 
@@ -91,17 +103,23 @@ const moveImagesRight = function () {
     if (counter > 1) {
         counter--;
         track = track + 100;
-        wrapperOne.style.marginLeft = `${track}%`;
+        wrapperOne.forEach(element => {
+            element.style.marginLeft = `${track}%`;
+        });
     }
 }
 
-rightButton.addEventListener('click', () => {
-    moveImagesLeft();
-});
+rightButton.forEach((element) => {
+    element.addEventListener('click', () => {
+        moveImagesLeft();
+    })
+})
 
-leftButton.addEventListener('click', () => {
-    moveImagesRight();
-});
+leftButton.forEach((element) => {
+    element.addEventListener('click', () => {
+        moveImagesRight();
+    })
+})
 
 document.addEventListener('keydown', (event) => {
     const nomTouche = event.key;
