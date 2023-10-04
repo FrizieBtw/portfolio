@@ -16,11 +16,12 @@ const filtre = document.querySelectorAll('.filtre');
 const wrapperOne = document.querySelectorAll('.wrapper-1');
 const leftButton = document.querySelectorAll('.carousel-left');
 const rightButton = document.querySelectorAll('.carousel-right')
-const imageContainer = document.querySelector('.rtx-image-container');
+const imageContainer = document.querySelectorAll('.rtx-image-container');
 var openFen;
 var leFiltre;
 let track = 0;
 let counter = 1;
+let maxSlides = 0;
 
 function overlay(element) {
     rtxAff.style.display = 'flex'
@@ -80,17 +81,19 @@ blogue.addEventListener('click', () => {
 });
 
 infopany.addEventListener('click', () => {
+    maxSlides = 4;
     overlay(rtxInfopany)
     openFen = rtxInfopany
 });
 
 computr.addEventListener('click', () => {
+    maxSlides = 5;
     overlay(rtxComputr)
     openFen = rtxComputr
 });
 
 const moveImagesLeft = function () {
-    if (counter < imageContainer.childElementCount) {
+    if (counter < maxSlides) {
         counter++;
         track = track - 100;
         wrapperOne.forEach(element => {
