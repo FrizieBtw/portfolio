@@ -1021,6 +1021,12 @@ h1 {
 }
 
 @media screen and (max-width: 1000px) and (min-height: 1470px) {
+
+	#cv img {
+		width: 90%;
+		transform: translateY(10%);
+	}
+
 	.footer {
 		font-size: 25px;
 		padding: 3px;
@@ -1101,7 +1107,7 @@ h1 {
 		font-size: 50px;
 		text-align: center;
 		bottom: 7vh;
-		left: 22.7vw;
+		left: 35.7vw;
 	}
 
 	.container:first-of-type #prompt {
