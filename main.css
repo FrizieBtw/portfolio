@@ -837,6 +837,10 @@ h1 {
 	background-repeat: round;
 }
 
+#minuteur .image {
+	background-image: url(images/minuteur-rtx.png);
+}
+
 #infopany .image {
 	background-color: #ffffff;
 	display: flex;
