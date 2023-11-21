@@ -89,7 +89,7 @@ main {
 }
 
 body {
-	background: center url(images/Fond_portfolio.jpg);
+	background: fixed url(images/Fond_portfolio.jpg);
 	height: 100%;
 	margin: 0;
 	background-size: cover;
