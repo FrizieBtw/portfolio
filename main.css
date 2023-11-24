@@ -978,13 +978,23 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 25px;
+}
+
+#cv img:hover {
+	cursor: pointer;
+	filter: blur(5px);
 }
 
 #cv img {
-	width: 50%;
+	width: 100%;
 	height: auto;
 	border-radius: 10px;
+	filter: blur(0px);
+	transition: all 0.7s ease;
+}
+
+#cv a {
+	width: 50%;
 }
 
 @keyframes fondu-in {
@@ -1030,9 +1040,12 @@ h1 {
 
 @media screen and (max-width: 1000px) and (min-height: 1470px) {
 
-	#cv img {
-		width: 90%;
+	#cv {
 		transform: translateY(10%);
+	}
+
+	#cv a {
+		width: 90%;	
 	}
 
 	.footer {
