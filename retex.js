@@ -9,6 +9,8 @@ const infopany = document.querySelector('#infopany');
 const rtxInfopany = document.querySelector('#retex-infopany');
 const computr = document.querySelector('#computr');
 const rtxComputr = document.querySelector('#retex-computr');
+const minuteur = document.querySelector('#minuteur');
+const rtxMinuteur = document.querySelector('#retex-minuteur');
 const rtxAff = document.querySelector('.retex-aff');
 const rtxFen = document.querySelectorAll('.retex-fen');
 const rtx = document.querySelectorAll('.retex');
@@ -90,6 +92,11 @@ computr.addEventListener('click', () => {
     maxSlides = 5;
     overlay(rtxComputr)
     openFen = rtxComputr
+});
+
+minuteur.addEventListener('click', () => {
+    overlay(rtxMinuteur)
+    openFen = rtxMinuteur
 });
 
 const moveImagesLeft = function () {
