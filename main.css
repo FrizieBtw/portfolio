@@ -170,23 +170,26 @@ h1 {
 }
 
 .card {
-	width: 221px;
-	height: 285px;
+	width: 240px;
+	height: 364px;
 	background: rgb(38, 38, 38);
 	box-shadow: 7px 5px 10px rgb(0 0 0 / 33%);
 	border-radius: 5px;
 }
 
 .imge {
-	height: 106px;
-	background-color: #6c5ce7;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	height: 183px;
+    background-color: #6c5ce7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imge .Usericon {
-	transform: translateX(10px) translateY(10px);
-	width: 86px;
+	transform: translateX(-1px) translateY(10px);
+	width: 147px;
 }
 
 .Usericon img {
@@ -196,17 +199,17 @@ h1 {
 
 .imge .UserName {
 	background-color: #414141;
-	width: 110px;
-	height: 20px;
-	border-width: 10px;
-	border-radius: 5px;
-	border-color: #262626;
-	color: #ffffff;
-	font-size: 15px;
-	transform: translateX(102px) translateY(-46px);
-	margin: 0;
-	margin-right: 0;
-	text-align: center;
+    width: 110px;
+    height: 20px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #262626;
+    color: #ffffff;
+    font-size: 15px;
+    transform: translateX(-2px) translateY(6px);
+    margin: 0;
+    margin-right: 0;
+    text-align: center;
 }
 
 .imge .Id {
@@ -225,16 +228,16 @@ h1 {
 
 .Description {
 	border-color: #141414;
-	background-color: #414141;
-	transform: translate(5px, 6px);
-	width: 210px;
-	height: 132px;
-	border-radius: 5px;
-	margin: 0;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	flex-direction: column-reverse;
+    background-color: #414141;    height: 183px;
+    transform: translate(5px, 6px);
+    width: 229px;
+    height: 135px;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
 }
 
 .Description p {
@@ -244,11 +247,11 @@ h1 {
 
 .social-media:before {
 	content: " ";
-	display: block;
-	width: 100%;
-	height: 2px;
-	transform: translatey(10px);
-	background: #414141;
+    display: block;
+    width: 100%;
+    height: 3px;
+    transform: translatey(10px);
+    background: #414141;
 }
 
 .social-media a {
@@ -262,9 +265,9 @@ h1 {
 }
 
 .social-media a img {
-	transform: translateX(61px) translateY(15px);
-	width: 20px;
-	fill: currentColor;
+	transform: translateX(67px) translateY(15px);
+    width: 20px;
+    fill: currentColor;
 }
 
 @keyframes slidein {
