@@ -1,0 +1,114 @@
+{
+    "projects": [
+        {
+            "name": "Odomo",
+            "year": "2022",
+            "context": "scolar",
+            "cover": "odomo-rtx.jpg",
+            "description": [
+                "Le projet Odomo consiste en une simulation de mini station météo, et de contrôle, codée en java. J’ai apporté ma contribution à ce code par la complétion de nombreuses fonctionnalités, puis j’ai imaginé et codé entièrement le contrôle du jardin.",
+                "Ce projet m’a permis de voir un début de vrai code java, en mettant en lien plusieurs classes pour la première fois. Elle m’a également permis d’approfondir les possibilités qu’on a avec un tableau."
+            ],
+            "tools": [
+                "Java"
+            ],
+            "schema": [
+                "schema-odomo.jpg"
+            ],
+            "link": "pdfs/RapportOdomo.pdf"
+        },
+        {
+            "name": "Blogue.sh",
+            "year": "2022",
+            "context": "scolar",
+            "cover": "blogue-rtx.jpg",
+            "description": [
+                "Blogue.sh est un script bash permetant l'édition de pages composant un blogue. Celui-ci contient différentes commandes comme la création, l'édition, la supression ou la visualisation d'une page.",
+                "Ce projet était la première fois que je rédigeais un script bash, ainsi il m'a permis de comprendre comment un script se compose. Grâce à celui-ci, j'ai appris à utiliser des constantes, des fonctions ou encore à récupérer des paramètres en bash."
+            ],
+            "tools": [
+                "Bash"
+            ],
+            "schema": [
+                "bloguesh-schema.png"
+            ],
+            "link": "pdfs/bloguesh.pdf"
+        },
+        {
+            "name": "Infopany",
+            "year": "2022",
+            "context": "scolar",
+            "cover": "infopany-rtx.png",
+            "description": [
+                "Infopany est le premier site que j'ai développé. Celui-ci était un projet scolaire. Il m'a permis de comprendre comment mettre en place le code d'un site web en HTML et CSS. Lors de celui-ci j'ai également fait mes premiers essais de responsive et ai renforcé ma maîtrise de l'attribut flex."
+            ],
+            "tools": [
+                "HTML",
+                "CSS"
+            ],
+            "schema": [
+                "infopany.png",
+                "infopany2.png",
+                "infopany3.png",
+                "infopany4.png"
+            ],
+            "link": ""
+        },
+        {
+            "name": "Biosphere7",
+            "year": "2022",
+            "context": "scolar",
+            "cover": "biosphere-rtx.jpg",
+            "description": [
+                "Biosphère est un jeu fictif inspiré du vrai projet, dans lequel il faut planter des arbres sur un plateau pour gagner des points. Mon but était de coder, en java, une IA capable de jouer à ce jeu.",
+                "A travers ce projet j'ai pu améliorer ma compréhension en terme de manipulation d'objets, mais également le traitement de chaînes de caractères. De plus j'ai eu à versionner le projet grâce à un dépôt git, ce qui m'a initié à l'utilisation de ce dernier."
+            ],
+            "tools": [
+                "Java"
+            ],
+            "schema": [
+                "biosphere-schema.png"
+            ],
+            "link": "pdfs/RapportBiosphère.pdf"
+        },
+        {
+            "name": "Comput-R³",
+            "year": "2023",
+            "context": "scolar",
+            "cover": "computr-rtx.png",
+            "description": [
+                "Comput-R³ était un projet de 2 semaines en équipe de 5. Celui-ci consistait à développer un logiciel de visualisation de données se rapportant à l'écologie. La partie graphique a été faite en C# grâce à .NET Framework, et la partie traitement de données en python. Ce projet m'a permis d'approfondir C#. De plus c'était la première fois que je faisais communiquer deux langages différents entre eux."
+            ],
+            "tools": [
+                "CSharp",
+                "Python"
+            ],
+            "schema": [
+                "computr1.png",
+                "computr2.png",
+                "computr3.png",
+                "computr4.png",
+                "computr5.png"
+            ],
+            "link": "pdfs/RapportComputr.pdf"
+        },
+        {
+            "name": "Minuteur",
+            "year": "2023",
+            "context": "personnal",
+            "cover": "minuteur-rtx.png",
+            "description": [
+                "Ce minuteur est un projet personnel que j'ai réalisé seul en html, css et javascript vanilla. Celui-ci était destiné à une professeure de l'iut de Bordeaux. Il m'a permis de mettre en pratique mes connaissances en javascript. De plus, il m'a permis de découvrir comment utiliser des fichiers audio en javascript.">
+            ],
+            "tools": [
+                "HTML",
+                "CSS",
+                "Javascript"
+            ],
+            "schema": [
+                "schema-minuteur.png"
+            ],
+            "link": "https://friziebtw.github.io/minuteur"
+        }
+    ]
+}

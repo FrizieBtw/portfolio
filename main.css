@@ -808,9 +808,9 @@ h1 {
 }
 
 .retex {
-	margin: 30px;
+	margin: 15px 30px;
 	width: 350px;
-	height: 200px;
+	height: 215px;
 	display: flex;
 	flex-direction: column;
 	transition: all 0.3s;
@@ -945,7 +945,7 @@ h1 {
 	margin: 0;
 	padding: 0;
 	margin-top: 5px;
-	margin-bottom: 7.5px;
+	margin-bottom: 35px;
 	font-size: 100%;
 	display: flex;
 	justify-content: center;
