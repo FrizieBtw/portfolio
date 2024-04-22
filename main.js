@@ -1,8 +1,10 @@
 const loader = document.querySelector('.loader');
 
-window.addEventListener('load', () => {
-    loader.classList.add('fondu-out');
-})
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        loader.classList.add('fondu-out');
+    }
+};
 
 const buttonContact = document.querySelector('#contact');
 const card = document.querySelector('#contact-card');
