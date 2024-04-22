@@ -74,6 +74,11 @@ function imageFromLanguage(language) {
         case "sh":
         case "shell":
             return "bash.png"
+        case "sf":
+        case "symfony":
+            return "symfony.png"
+        case "androidstudio":
+            return "android-studio.png"
         default:
             return ""
     }
@@ -261,7 +266,7 @@ function addToHtml(project) {
         knowMoreLink.target = "_blank"
         knowMoreLink.href = project.link
         if (project.link.includes("pdf")) {
-            knowMoreLink.innerText = "En savoir +"
+            knowMoreLink.innerText = "En savoir plus +"
         } else {
             knowMoreLink.innerText = "Voir le projet +"
         }

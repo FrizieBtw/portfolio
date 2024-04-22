@@ -96,6 +96,53 @@
                 "schema-minuteur.png"
             ],
             "link": "https://friziebtw.github.io/minuteur"
+        },
+        {
+            "name": "TyrBot",
+            "year": "2023",
+            "context": "personal",
+            "cover": "tyrbot-cover.png",
+            "description": "TyrBot est un bot discord que j'ai développé afin de me débarrasser des bots publics sur mon serveur Discord. Celui-ci est codé en python (pycord) et a plusieurs fonctionnalités comme: des cartes de bienvenue, de l'assignation de rôles par intéractions, de la création de chats vocaux temporaires, un système de tickets d'aide, un suivi d'une chaine youtube, etc.",
+            "tools": [
+                "Python"
+            ],
+            "schema": [
+
+            ],
+            "link": "https://discord.gg/D4akBR8"
+        },
+        {
+            "name": "NotEnoughSeries",
+            "year": "2024",
+            "context": "scolar",
+            "cover": "nes-cover.png",
+            "description": "NotEnoughSeries est une bibliothèque de séries en tout genres développée grâce au framework \"Symfony\". Celle-ci répertorie des séries depuis une base de données externe. Un système utilisateurs est présent, il permet d'indiquer quelles séries on aime, et quels épisodes on a regardé, il est également possible de laisser une note et un commentaire sur une série. Il possède également un système de gestion des utilisateurs et commentaires pour admin.",
+            "tools": [
+                "Symfony",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Web"
+            ],
+            "schema": [
+                "nes.png"
+            ],
+            "link": ""
+        },
+        {
+            "name": "Éditeur de graphes",
+            "year": "2024",
+            "context": "scolar",
+            "cover": "labyrinthe-cover.png",
+            "description": "Ceci est un explorateur/éditeur/créateur de labyrinthes pour android. Il est relié à un serveur json permettant de récupérer des labyrinthes initiaux. On peut cependant créer et enregistrer des labyrinthes localement.",
+            "tools": [
+                "Java",
+                "AndroidStudio"
+            ],
+            "schema": [
+                "labyrinthe.png"
+            ],
+            "link": ""
         }
     ]
 }
