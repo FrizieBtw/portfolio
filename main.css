@@ -783,7 +783,6 @@ h1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	animation: fondu-in 0.2s;
 }
 
 .fondu-out {
@@ -958,16 +957,6 @@ h1 {
 
 #cv a {
 	width: 50%;
-}
-
-@keyframes fondu-in {
-	from {
-		opacity: 0%;
-	}
-
-	to {
-		opacity: 100%;
-	}
 }
 
 @keyframes open-overlay {
