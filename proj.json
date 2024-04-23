@@ -116,7 +116,7 @@
             "year": "2024",
             "context": "scolar",
             "cover": "nes-cover.png",
-            "description": "NotEnoughSeries est une bibliothèque de séries en tout genres développée grâce au framework \"Symfony\". Celle-ci répertorie des séries depuis une base de données externe. Un système utilisateurs est présent, il permet d'indiquer quelles séries on aime, et quels épisodes on a regardé, il est également possible de laisser une note et un commentaire sur une série. Il possède également un système de gestion des utilisateurs et commentaires pour admin.",
+            "description": "NotEnoughSeries est une bibliothèque de séries en tout genres, développée grâce au framework \"Symfony\". Celle-ci répertorie des séries depuis une base de données externe. Un système utilisateurs est présent, il permet d'indiquer quelles séries on aime, et quels épisodes on a regardé, il est également possible de laisser une note et un commentaire sur une série. Le site possède également un système de gestion des utilisateurs et des commentaires pour admin.",
             "tools": [
                 "Symfony",
                 "HTML",
@@ -130,7 +130,7 @@
             "link": ""
         },
         {
-            "name": "Éditeur de graphes",
+            "name": "Éditeur de labyrinthes",
             "year": "2024",
             "context": "scolar",
             "cover": "labyrinthe-cover.png",
