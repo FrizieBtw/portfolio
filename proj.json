@@ -62,6 +62,20 @@
             "link": "pdfs/RapportBiosphère.pdf"
         },
         {
+            "name": "HyperStellar",
+            "year": "2023",
+            "context": "scolar",
+            "cover": "hyperstellar-cover.jpg",
+            "description": "HyperStellar est un jeu de plateau développé en .NET. Celui-ci a fait l'objet d'un projet en groupe de 4 personnes sur un peu plus de 2 semaines. Il m'a permis d'approfondir mes connaissances en C#, notamment avec le framework .NET.",
+            "tools": [
+                "CSharp"
+            ],
+            "schema": [
+
+            ],
+            "link": ""
+        },
+        {
             "name": "Comput-R³",
             "year": "2023",
             "context": "scolar",
