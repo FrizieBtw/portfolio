@@ -115,6 +115,20 @@
             "link": "https://discord.gg/D4akBR8"
         },
         {
+            "name": "Chiffrement.py",
+            "year": "2023",
+            "context": "scolar",
+            "cover": "chiffrement.py-cover.png",
+            "description": "Lors de ce projet en binôme, nous avons réalisé un script de chiffrement asymétrique (1 clé privée + 1 clé publique) en python. Lors de ce projet nous avons dû mobiliser des notions mathématiques (modulo par exemple).",
+            "tools": [
+                "Python"
+            ],
+            "schema": [
+                "chiffrement.py.png"
+            ],
+            "link": ""
+        },
+        {
             "name": "NotEnoughSeries",
             "year": "2024",
             "context": "scolar",
