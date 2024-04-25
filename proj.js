@@ -40,10 +40,10 @@ filterList.forEach((element) => {
             filter.style.textDecoration = 'none'  
         })
         actualFilter = element.className.substring(7)
-        console.log(actualFilter)
         const retexList = document.querySelectorAll(".retex")
         retexList.forEach((rtx) => {
-            if (!rtx.className.includes(actualFilter)) {
+            rtxFilters = rtx.className.split(" ")
+            if (!rtxFilters.includes(actualFilter)) {
                 rtx.style.display = 'none'
             } else {
                 rtx.style.display = 'flex'
@@ -53,32 +53,32 @@ filterList.forEach((element) => {
     })
 })
 
-function imageFromLanguage(language) {
+function getCorrectName(language) {
     switch(language.toLowerCase()) {
         case "java":
-            return "java.png"
+            return "java"
         case "javascript":
         case "js":
-            return "js.png"
+            return "javascript"
         case "csharp":
         case "c#":
-            return "csharp.png"
+            return "csharp"
         case "html":
-            return "html.png"
+            return "html"
         case "css":
-            return "css.png"
+            return "css"
         case "python":
         case "py":
-            return "python.png"
+            return "python"
         case "bash":
         case "sh":
         case "shell":
-            return "bash.png"
+            return "bash"
         case "sf":
         case "symfony":
-            return "symfony.png"
+            return "symfony"
         case "androidstudio":
-            return "android-studio.png"
+            return "android-studio"
         default:
             return ""
     }
@@ -246,8 +246,8 @@ function addToHtml(project) {
         languagesDiv = document.createElement("div")
         languagesDiv.className = "langages"
         project.tools.forEach((tool) => {
-            imgSrc = "images/" + imageFromLanguage(tool)
-            if (imgSrc != "images/") {
+            imgSrc = "images/" + getCorrectName(tool) + ".png"
+            if (imgSrc != "images/.png") {
                 languageImg = document.createElement("img")
                 languageImg.loading = "lazy"
                 languageImg.alt = tool
