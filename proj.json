@@ -156,7 +156,12 @@
                 "Web"
             ],
             "schema": [
-                "nes.png"
+                "nes1.png",
+                "nes2.png",
+                "nes3.png",
+                "nes4.png",
+                "nes5.png",
+                "nes6.png"
             ],
             "link": ""
         },
